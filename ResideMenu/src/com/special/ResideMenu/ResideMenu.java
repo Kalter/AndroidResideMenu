@@ -560,7 +560,7 @@ public class ResideMenu extends FrameLayout {
 
           float targetScale = getTargetScale(ev.getRawX());
           if (mUse3D) {
-            int angle = scaleDirection == DIRECTION_LEFT ? -ROTATE_Y_ANGLE : ROTATE_Y_ANGLE;
+            float angle = scaleDirection == DIRECTION_LEFT ? -ROTATE_Y_ANGLE : ROTATE_Y_ANGLE;
             angle *= (1 - targetScale) * 2;
             ViewHelper.setRotationY(viewActivity, angle);
 
