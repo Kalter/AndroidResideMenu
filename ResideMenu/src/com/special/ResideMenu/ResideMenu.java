@@ -434,7 +434,7 @@ public class ResideMenu extends FrameLayout {
         ObjectAnimator.ofFloat(target, "scaleY", targetScaleY));
 
     if (mUse3D) {
-      int angle = scaleDirection == DIRECTION_LEFT ? -ROTATE_Y_ANGLE : ROTATE_Y_ANGLE;
+      float angle = scaleDirection == DIRECTION_LEFT ? -ROTATE_Y_ANGLE : ROTATE_Y_ANGLE;
       scaleDown.playTogether(ObjectAnimator.ofFloat(target, "rotationY", angle));
     }
 
